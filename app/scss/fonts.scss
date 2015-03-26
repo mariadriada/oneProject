@@ -6,10 +6,67 @@
 @import url(http://fonts.googleapis.com/css?family=Lora);
 /*font-family: 'Open Sans', sans-serif;*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/*font-family: 'News Cycle', sans-serif;*/
+@import url(http://fonts.googleapis.com/css?family=News+Cycle);
+/*font-family: 'Montserrat', sans-serif;*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/*font-family: 'Lobster', cursive;*/
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
 
 $primary-font:	'Open Sans', sans-serif;
+$large-font:	'News Cycle', sans-serif;
+$special-font:	'Lobster', cursive;
 
 .banner{
-	font: $primary-font;
+	font-family: $primary-font;
 }
 
+.title{
+	font-family:: $large-font;
+}
+
+.title2{	
+	font-size: 36px;
+	font-weight: 700;
+	font-weight: 100;
+	letter-spacing: 5px;
+}
+
+.title1{
+	font-size: 48px;
+	font-weight: 300;
+	font-weight: 100;
+	letter-spacing: 7px;
+}
+
+.title3{
+
+}
+
+.text-special{
+	border: 2px solid white; 
+	width: 60px;
+	 height: 60px; 
+	border-radus: 53px !important;
+	width: 50px;
+	height: 50px;
+	border: 1px solid white;
+	border-radius: 25px;
+}
+
+.text-special p{
+	font-family: $special-font;
+	font-size:22px;
+	line-height:50px;
+} 
+
+#text-special2{
+	margin-top:10px;
+
+}
+
+#text-special1:hover{
+	background-color: white;
+	color:black;
+}

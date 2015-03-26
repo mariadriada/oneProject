@@ -23,3 +23,42 @@
 	float: left;
 	
 }
+
+.box-slider-1{
+	width: 517px;
+	height: 285px;
+	background-color: transparent;
+	z-index: 10;
+	position: absolute;
+	top: 42%;
+	left: 47%;
+	padding: 5px;
+}
+
+
+.box-slider-opacity-1{
+	width: 517px;
+	height: 320px;
+	
+	background-color: #190707;
+	z-index: 9;
+	position: absolute;
+	top: 42%;
+	left: 47%;
+	-moz-opacity: 0.38;
+	-khtml-opacity: 0.38;
+	opacity: 0.38;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=38);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=38);
+	filter:alpha(opacity=38);
+}
+
+
+
+
+
+
+
+
+
+
