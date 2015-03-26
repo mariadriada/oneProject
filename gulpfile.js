@@ -82,7 +82,7 @@ gulp.task('publicStyle', function(){
 //Watch
 gulp.task('watch', function(){
 	//Reload Templates and Scripts
-	gulp.watch(['.app/*.html', 'app/scripts/src/*.js'], reload);
+	gulp.watch(['./app/*.html', 'app/scripts/src/*.js'], reload);
 	gulp.watch('./app/scss/*.scss', ['sass']);  
 	gulp.watch('./scripts/src/**/*.js', ['scripts']);
 
@@ -106,7 +106,7 @@ gulp.task('serve', ['browser-sync', 'watch']);
 gulp.task('production', ['sassmin', 'uglify', 'publicHtml', 'publicScripts', 'publicStyle']);
 
 //Build task
-gulp.task('build', ['sass', 'scripts', 'sass_partial']);
+gulp.task('build', ['sass', 'scripts']);
 
 
 
