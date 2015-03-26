@@ -1,0 +1,35 @@
+$max-size:	100%;
+
+.banner{
+	background-color: rgb(255, 0, 232);
+	width:100%;
+	padding:0;
+	border: 5px solid black;
+	height: auto;
+}
+
+
+#slider{
+	width: $max-size;
+  	height: $max-size;
+}
+#slider img{
+	width:$max-size;
+	height:$max-size;
+	margin:0 auto;
+}
+#slider img{
+	display: none;
+}
+#slider img:nth-child(1){
+	display: block;
+}
+
+.btn-slider{
+	background-color: red;
+  position: absolute;
+  top: 55%; 
+  width: 100px;
+  height: 100px;
+}
+	

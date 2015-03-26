@@ -1,0 +1,15 @@
+
+$col-1-4:	25%;
+$col-1-1:	100%;
+
+.logo{	
+	width: $col-1-4;
+	background-image: url("../resources/img/logo.jpg");
+	background-size: $col-1-1;
+	background-repeat: no-repeat;
+}
+
+
+.icon-lang{
+	width:20%;
+}

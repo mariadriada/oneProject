@@ -1,0 +1,25 @@
+.main-container{
+	background-color: red;
+	min-height:90%;
+	padding:0;
+}
+
+.welcome-container{
+	background-color: white;
+	height:30%;
+	width:100%;
+}
+
+.article-container{
+	height:auto;
+	padding:5px;
+}
+
+.regular-article{
+	background-color: yellow;
+	width: 200px;
+	height: 200px;
+	border:1px solid red;
+	float: left;
+	
+}

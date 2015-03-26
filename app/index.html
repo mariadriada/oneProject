@@ -12,11 +12,79 @@
 	<script type="text/javascript" src="scripts/dist/angular-route.min.js"></script>
 
 	<script type="text/javascript" src="scripts/src/app.js"></script>
+	<link rel="stylesheet" href="css/main.css">
 	 
 </head>
 <body ng-app="app">
 
-	<!-- Dinamic conatainer-->
+	<header class="gris container">	
+		<section class="logo">
+			sfgsldblji
+		</section>
+		
+		<section class="menu">	
+			<ul class="nav nav-pills">
+				<li lass="active"><a href="">HOME</a></li>
+				<li><a href="">DEALS</a></li>
+				<li><a href="">HOTEL & APARTMENT</a></li>
+				<li><a href="">PICS</a></li>
+				<li><a href="">SERVICES</a></li>
+				<li><a href="">MEETING</a></li>
+				<li><a href="">ANDORRA</a></li>
+				<li><a href="">CONTACT</a></li>
+				<li><a href="">MY BOOKINGS</a></li>			
+			</ul>
+		</section>
+		
+		<section class="icon-lang">
+			<div class="text1 cwhite">OFFICIAL WEBSITE</div>
+			<div class="text2">Best price online guaranteed</div>
+		</section>
+	</header>	
+
+	<nav class="container main-container">
+
+		<nav class="banner">
+			<div class="btn-slider"></div>
+			
+			<div id="slider">
+				<img src="resources/img/b1.jpg">
+				<img src="resources/img/b2.jpg">
+				<img src="resources/img/b3.jpg">
+			</div>
+			
+			<!--
+			<div class="btn-back">
+				<img src="img/btn.jpg">
+			</div>-->
+			
+		</nav>
+		
+		<nav class="welcome-container">
+			welcome
+		</nav>
+		
+		<nav class="article-container">
+			<article class="regular-article">
+			welcome
+			</article>
+			<article class="regular-article">
+			welcome
+			</article>
+			<article class="regular-article">
+			welcome
+			</article>
+			<article class="regular-article">
+			welcome
+			</article>
+		</nav>
+		
+	</nav>
+	
+	<footer>
+		
+	</footer>
+	<!-- Dinamic container -->
 	<div ng-view class="viewContent">
 
 	</div>

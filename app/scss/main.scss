@@ -1,1 +1,38 @@
+@import "banner";
+@import "container";
 @import "fonts";
+@import "icon-logo";
+@import "menu";
+
+
+header{
+	background-color: #1C221E;
+	height: 100px;
+	display: flex;
+	padding: 5px;
+}
+
+//Tools
+
+
+.cgris{
+	color:1C221E;
+}
+.gris{
+	background-color: 1C221E;
+}
+
+.white{
+	background-color: white;
+}
+
+.cwhite{
+	color: white;
+}
+.text1{
+}
+
+.text2{
+	color: #BFC8C0;
+}
+
