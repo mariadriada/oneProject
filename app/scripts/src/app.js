@@ -19,4 +19,17 @@ app.config(function($routeProvider){
 //Index controller
 app.controller('t_indexCtrl', function($scope){
 	console.log('t_indexCtrl'); 
+
+    $scope.text = "hola mundo cruel!!!";
+  /*  $scope.changeColor = function(){
+        console.log("function changeColor(this);");
+    };*/
 });
+
+
+function changeColor(element){
+    var color = $(element).attr("color");
+    var obj = $(element).attr("element");
+    $(obj).css("background-color",color);
+    console.log("change "+color +" element "+obj);
+};
