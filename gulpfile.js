@@ -1,11 +1,12 @@
-var	gulp 		= 	require('gulp'),
-	browserSync = 	require('browser-sync'),
-	sass		=	require('gulp-sass'),
-	prefix 		=	require('gulp-autoprefixer'),
-	concat 		= 	require('gulp-concat'),
-	cssmin		= 	require('gulp-minify-css'),
-	uglify 		= 	require('gulp-uglify'),
-	reload 		=	browserSync.reload
+var	gulp 		   = 	require('gulp'),
+	browserSync  = 	require('browser-sync'),
+	sass		     =	require('gulp-sass'),
+	prefix       =	require('gulp-autoprefixer'),
+	concat       = 	require('gulp-concat'),
+	cssmin       = 	require('gulp-minify-css'),
+	uglify       = 	require('gulp-uglify'),
+  bower        =  require('gulp-bower'),
+	reload       =	 browserSync.reload
 	;
 
 //Browser sync
@@ -85,6 +86,12 @@ gulp.task('watch', function(){
 	gulp.watch('./app/scss/*.scss', ['sass']);  
 	gulp.watch('./scripts/src/**/*.js', ['scripts']);
 
+});
+
+//Bower: for downloading packages for development front-end
+gulp.task('bower', function() {
+  return bower('./my_bower_components')
+    .pipe(gulp.dest('lib/'))
 });
 
 

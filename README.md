@@ -18,4 +18,4 @@ gulp
 Install gulp with command: npm install gulp
 
 ### Components to install with command (Only if necessary): npm install --save-dev [nombre_componente]
- (browser-sync, gulp-sass, gulp-autoprefixer, gulp-concat, gulp-minify-css, gulp-uglify )
+ (browser-sync, gulp-sass, gulp-autoprefixer, gulp-concat, gulp-minify-css, gulp-uglify, local gulp-bower(npm install -g) )
