@@ -61,7 +61,7 @@
   background-color: transparent;
   z-index: 10;
   position: absolute;
-  top: 42%;
+  top: 33%;
   left: 47%;
   padding: 5px; }
 
@@ -71,7 +71,7 @@
   background-color: #190707;
   z-index: 9;
   position: absolute;
-  top: 42%;
+  top: 32%;
   left: 47%;
   -moz-opacity: 0.38;
   -khtml-opacity: 0.38;
@@ -150,12 +150,16 @@
 
 .button-change .btn-cg {
   border: 2px solid white;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radus: 15px !important;
   border: 1px solid white;
   border-radius: 25px;
   margin: 5px; }
+
+.btn-cg:hover {
+  width: 25px;
+  height: 25px; }
 
 .menu {
   width: 55%;
