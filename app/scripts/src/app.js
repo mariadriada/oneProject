@@ -36,6 +36,21 @@ app.directive('sliderChangeBgc', function() {
   };
 });
 
+//Directive for access component
+app.directive('access', function() {
+  return {
+    restrict: "E",
+    transclude:true,
+    scope: {
+        data1: "="
+    },
+    templateUrl: 'views/ui-components/access.html'
+  };
+});
+
+
+
+
 
 
 /*fn jquery*/

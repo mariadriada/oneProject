@@ -82,7 +82,7 @@ gulp.task('publicStyle', function(){
 //Watch
 gulp.task('watch', function(){
 	//Reload Templates and Scripts
-	gulp.watch(['./app/*.html', 'app/scripts/src/*.js'], reload);
+	gulp.watch(['./app/*.html', 'app/scripts/src/*.js', './app/views/**/*.html'], reload);
 	gulp.watch('./app/scss/*.scss', ['sass']);  
 	gulp.watch('./scripts/src/**/*.js', ['scripts']);
 
