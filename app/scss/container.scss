@@ -1,5 +1,8 @@
+
+$top-level: 11;
+
 .main-container{
-	min-height:90%;
+	min-height:100%;
 	padding:0;
 }
 
@@ -52,12 +55,6 @@
 }
 
 
-.button-change{
-	width:100px;
-	height:50px;
-	display:inline-flex;
-}
-
 
 .box-access{
 	width: 300px;
@@ -103,3 +100,39 @@
 	width:80%;
 	margin: 0 auto;
 }
+
+
+.slider-plane-container{
+	width: 100%;
+	height: 300px;
+}
+
+.slider-plane{
+	width:25%;
+	height: 300px;
+	z-index: 10;
+	padding: 5px;
+	background-color: red;
+	background-color: #00A064;
+	z-index: 9;	
+	-moz-opacity: 0.58;
+	-khtml-opacity: 0.58;
+	opacity: 0.58;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha" Opacity=58;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=58);
+	filter: alpha(opacity=58);
+	float:left;
+
+	img{
+			width: 100%;
+			height: 100%;
+			padding: 0;
+	}
+
+	.level{
+		z-index: $top-level;
+
+		
+	}
+}
+
