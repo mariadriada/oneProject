@@ -41,7 +41,7 @@ $special-font:	'Lobster', cursive;
 }
 
 .title3{
-
+	font-family: 'Lora', serif;
 }
 
 .text-special{
@@ -53,6 +53,10 @@ $special-font:	'Lobster', cursive;
 	height: 50px;
 	border: 1px solid white;
 	border-radius: 25px;
+}
+
+.titlexx{
+
 }
 
 .text-special p{
@@ -69,4 +73,9 @@ $special-font:	'Lobster', cursive;
 #text-special1:hover{
 	background-color: white;
 	color:black;
+}
+
+.font-level{
+	letter-spacing:3px;
+	font-weight:inherit;
 }

@@ -48,6 +48,17 @@ app.directive('access', function() {
   };
 });
 
+//Directive for information box
+app.directive('boxInformation', function() {
+  return {
+    restrict: "E",
+    transclude:true,
+    scope: {
+        data1: "="
+    },
+    templateUrl: 'views/ui-components/boxInformation.html'
+  };
+});
 
 
 
