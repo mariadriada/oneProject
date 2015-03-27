@@ -21,11 +21,24 @@ app.controller('t_indexCtrl', function($scope){
 	console.log('t_indexCtrl'); 
 
     $scope.text = "hola mundo cruel!!!";
-  /*  $scope.changeColor = function(){
-        console.log("function changeColor(this);");
-    };*/
 });
 
+
+//Directive for Slider component
+app.directive('sliderChangeBgc', function() {
+  return {
+    restrict: "E",
+    transclude:true,
+    scope: {
+        data1: "="
+    },
+    templateUrl: 'views/ui-components/sliderChangeBgc.html'
+  };
+});
+
+
+
+/*fn jquery*/
 
 function changeColor(element){
     var color = $(element).attr("color");
