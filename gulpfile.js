@@ -28,6 +28,8 @@ gulp.task('sass', function(){
     .pipe(prefix(['last 3 versions', '> 1%'], { cascade: true }))
     .pipe(gulp.dest('./app/css/'))
      .pipe(browserSync.reload({stream: true}));
+
+     
 });
 
 
@@ -43,10 +45,9 @@ gulp.task('sassmin', function () {
 // Minifies main.js
 gulp.task('uglify', function () {
   gulp
-    .src(['scripts/*.js'])
-    .pipe(concat('main.js'))
+    .src('./app/scripts/src/*.js')   
     .pipe(uglify())
-    .pipe(gulp.dest('scripts/min/'));
+    .pipe(gulp.dest('./app/scripts/min/'));
 });
 
 // Concat the scripts in the src folder.
@@ -58,24 +59,39 @@ gulp.task('scripts', function () {
 });
 
 //Html templates on public directory for production
-gulp.task('publicHtml', function(){
+gulp.task('public-html', function(){
 	 gulp
-    .src(['./app/*.html'])
+    .src(['./app/**/*.html'])
     .pipe(gulp.dest('./public/'));
 });
 
 //Scripts on public directory for production
-gulp.task('publicScripts', function(){
+gulp.task('public-scripts', function(){
 	 gulp
     .src(['./app/scrips/src/main.js'])
     .pipe(gulp.dest('./public/scripts/src/'));
 });
 
 //Style on public directory for production
-gulp.task('publicStyle', function(){
+gulp.task('public-style', function(){
 	 gulp
     .src(['./app/css/main.css'])
     .pipe(gulp.dest('./public/css/'));
+});
+
+//Resources on public directory for production
+gulp.task('public-resources', function(){
+   gulp
+    .src(['./app/resources/**/*'])  //Copy directories and files
+    .pipe(gulp.dest('./public/resources/'));  //Paste on public directory
+
+});
+
+//Scripts on public directory for production
+gulp.task('public-scripts', function(){
+   gulp
+    .src(['./app/scripts/**/*'])  //Copy directories and files
+    .pipe(gulp.dest('./public/scripts/'));  //Paste on public directory
 });
 
 
@@ -83,8 +99,8 @@ gulp.task('publicStyle', function(){
 gulp.task('watch', function(){
 	//Reload Templates and Scripts
 	gulp.watch(['./app/*.html', 'app/scripts/src/*.js', './app/views/**/*.html'], reload);
-	gulp.watch('./app/scss/*.scss', ['sass']);  
-	gulp.watch('./scripts/src/**/*.js', ['scripts']);
+	gulp.watch('./app/scss/*.scss', ['sass', 'sassmin']);  
+	gulp.watch('./app/scripts/src/*.js', ['scripts', 'uglify']);
 
 });
 
@@ -103,10 +119,10 @@ gulp.task('default', ['serve']);
 gulp.task('serve', ['browser-sync', 'watch']);
 
 //Production Task 
-gulp.task('production', ['sassmin', 'uglify', 'publicHtml', 'publicScripts', 'publicStyle']);
+gulp.task('production', ['sassmin', 'uglify', 'public-html', 'public-scripts', 'public-style', 'public-resources', 'public-scripts']);
 
 //Build task
-gulp.task('build', ['sass', 'scripts']);
+gulp.task('build', ['sass', 'scripts', 'uglify']);
 
 
 

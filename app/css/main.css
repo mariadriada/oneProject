@@ -5,35 +5,6 @@
 @import url(http://fonts.googleapis.com/css?family=News+Cycle);
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 @import url(http://fonts.googleapis.com/css?family=Lobster);
-.banner {
-  background-color: #ff00e8;
-  width: 100%;
-  padding: 0;
-  border: 5px solid black;
-  height: auto; }
-
-#slider {
-  width: 100%;
-  height: 100%; }
-
-#slider img {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto; }
-
-#slider img {
-  display: none; }
-
-#slider img:nth-child(1) {
-  display: block; }
-
-.btn-slider {
-  background-color: red;
-  position: absolute;
-  top: 55%;
-  width: 100px;
-  height: 100px; }
-
 .main-container {
   min-height: 100%;
   padding: 0; }
@@ -59,9 +30,7 @@
   height: 285px;
   background-color: transparent;
   z-index: 10;
-  position: absolute;
-  top: 23%;
-  left: 47%;
+  position: relative;
   padding: 5px; }
 
 .box-slider-opacity-1 {
@@ -69,9 +38,7 @@
   height: 320px;
   background-color: #190707;
   z-index: 9;
-  position: absolute;
-  top: 22%;
-  left: 47%;
+  position: relative;
   -moz-opacity: 0.38;
   -khtml-opacity: 0.38;
   opacity: 0.38;
@@ -152,6 +119,27 @@
 /*font-family: 'News Cycle', sans-serif;*/
 /*font-family: 'Montserrat', sans-serif;*/
 /*font-family: 'Lobster', cursive;*/
+.font-lobster {
+  font-family: 'Lobster', cursive !important; }
+
+.font_monteserrat {
+  font-family: 'Montserrat', sans-serif; }
+
+.font-news-circle {
+  font-family: 'News Cycle', sans-serif; }
+
+.fonts-open-sans {
+  font-family: 'Open Sans', sans-serif; }
+
+.fonts-roboto {
+  font-family: 'Roboto Condensed', sans-serif; }
+
+.font-yanone {
+  font-family: 'Yanone Kaffeesatz', sans-serif; }
+
+.font-lora {
+  font-family: 'Lora', serif; }
+
 .banner {
   font-family: 'Open Sans', sans-serif; }
 
@@ -251,6 +239,109 @@
 .nav > li > a:hover {
   color: #00A064;
   background-color: #1C221E; }
+
+.banner {
+  background-color: #ff00e8;
+  width: 100%;
+  padding: 0;
+  border: 5px solid black;
+  height: 600px; }
+  .banner .box-slider-1 {
+    position: relative;
+    top: -500px;
+    left: 58%; }
+  .banner .box-slider-opacity-1 {
+    position: relative;
+    top: -778px;
+    left: 58%; }
+  .banner .box-access {
+    position: relative;
+    top: -908px;
+    left: 10%; }
+  .banner .box-access-opacity {
+    position: relative;
+    top: -1156px;
+    left: 10%; }
+
+#slider {
+  width: 100%;
+  height: 100%; }
+
+#slider img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; }
+
+#slider img {
+  display: none; }
+
+#slider img:nth-child(1) {
+  display: block; }
+
+.btn-slider {
+  background-color: red;
+  position: absolute;
+  top: 55%;
+  width: 100px;
+  height: 100px; }
+
+.box-information-bgi {
+  width: 100%;
+  height: 300px; }
+  .box-information-bgi .box {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0; }
+    .box-information-bgi .box img {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      position: relative;
+      top: 0;
+      left: 0;
+      -moz-opacity: 0.65;
+      -khtml-opacity: 0.65;
+      opacity: 0.65;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha" Opacity=65;
+      filter: progid:DXImageTransform.Microsoft.Alpha(opacity=65);
+      filter: alpha(opacity=65); }
+    .box-information-bgi .box .level {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      position: relative;
+      top: 0;
+      left: 0; }
+      .box-information-bgi .box .level .title1 {
+        font-size: 48px;
+        font-weight: 300;
+        font-weight: 100;
+        letter-spacing: 7px;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        font-size: initial;
+        position: relative;
+        top: -200px; }
+      .box-information-bgi .box .level .title2 {
+        font-size: 40px;
+        font-weight: 700;
+        font-weight: 100;
+        letter-spacing: 5px;
+        text-align: center;
+        position: relative;
+        top: -210px; }
+      .box-information-bgi .box .level .icon-text {
+        font-size: 25px;
+        font-weight: 700;
+        font-weight: 100;
+        letter-spacing: 5px;
+        text-align: center;
+        position: relative;
+        top: -210px; }
 
 header {
   background-color: #1C221E;

@@ -1,20 +1,21 @@
-@import "banner";
+
 @import "container";
 @import "fonts";
 @import "icon-logo";
 @import "menu";
+@import "banner";
+@import "ui-components/boxinformationbgi";
 
 
 header{
 	background-color: #1C221E;
 	height: 100px;
 	display: flex;
-	padding: 5px;
-	
+	padding: 5px;	
 }
 
-//Tools
 
+//Tools
 
 .cgris{
 	color:1C221E;
