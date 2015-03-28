@@ -66,10 +66,13 @@ app.directive('boxInformation', function() {
 // Directive for information backgroung-image box 
 app.directive('boxInformationBgi', function() {
   return {
-    restrict: "C",
+    restrict: "E",
     transclude:true,
     scope: {
-        data: "="
+        title1: "@",
+        title2: "@",
+        icontext: "@",
+        img:"@"
     },
     templateUrl: 'views/ui-components/boxInformationBgi.html'
   };
@@ -121,7 +124,6 @@ app.directive('sliderPlane', function() {
 });
 
 
-
 /*fn jquery*/
 
 function changeColor(element){
@@ -130,4 +132,3 @@ function changeColor(element){
     $(obj).css("background-color",color);
     console.log("change "+color +" element "+obj);
 };
-

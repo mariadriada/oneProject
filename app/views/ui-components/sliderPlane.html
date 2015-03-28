@@ -1,35 +1,26 @@
 <div>
 	<div>
-		<div class="col100p">
+		<div class="col100p" >
+		
 			<div class="slider-plane-container" >
-
 				<div class="animate-repeat  slider-plane" ng-repeat="item in data.articles ">
 
-					<div class="container">
-						<!-- Idea!. Try to directive class or other type //TODO  -->
-
-						<!-- Truncate!. Because not is possible the implementary  of the directive on directive with angular Js.  -->
+					
+						<!-- Truncate!. Because not is possible the implementary  of the directive on directive with angular Js.   (IF IS POSSIBLE)-->
 
 						<!--
 						Not posibble
 							<box-information-bgi>
 							</box-information-bgi>
+
+						28-02-2015 --- EEVERITHING IS POSSIBLE !!!!!
+							If it's possible to implement using the param (transclude) on directive creation and adding in the template the label(<ng-transclude></ng-transclude>)
 						-->
-						<article >							
-							<img src="{{item.img}}" alt="">
-						</article>	
-						<div class="level">
-							{{item.title1}}
-							{{item.title2}}
-						</div>											
-					</div>
-					
-				 	 
+
+						<box-information-bgi img="resources/img/article2.jpg" title1="CELEBRATION " title2="Sensual"  icon-text="k">
+						</box-information-bgi>
 			    </div>
-
-				
 			</div>
-
 		</div>
 	</div>
 </div>
