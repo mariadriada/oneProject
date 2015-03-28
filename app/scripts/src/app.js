@@ -9,6 +9,7 @@ app.config(function($routeProvider){
             templateUrl: "views/home.html",
             controller: "t_indexCtrl"
         })
+
       
         //Default
         .otherwise({
