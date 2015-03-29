@@ -70,6 +70,7 @@ app.directive('boxInformationBgi', function() {
     scope: {
         title1: "@",
         title2: "@",
+        title3: "@",
         icontext: "@",
         img:"@",
         class1: "@",
@@ -105,9 +106,12 @@ app.directive('sliderPlane', function() {
             { 
                 "title1": "CELEBRATION" , 
                 "title2": "Sensual",
-                "title3": "Sensual" , 
                 "img": "resources/img/article1.jpg",
-                "icontext": "&"
+                "icontext": "&",
+                "class1": "title title1 font_monteserrat",
+                "class2": "title  fonts-roboto icon-text",
+                "class3": "title title2 fonts-roboto",
+
             }, 
             { 
                 "title1": "Beauty" , 

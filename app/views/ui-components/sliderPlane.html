@@ -1,27 +1,23 @@
-<div>
-	<div>
-		<div class="col100p" >
-		
-			<div class="slider-plane-container" >
-				<div class="animate-repeat  slider-plane" ng-repeat="item in data.articles ">
 
+<div class="col100p" >		
+	<div class="slider-plane-container" >
+		<div class="animate-repeat  slider-plane" ng-repeat="item in data.articles ">
+
+			
+				<!-- Truncate!. Because not is possible the implementary  of the directive on directive with angular Js.   (IF IS POSSIBLE)-->
+
+				<!--
+				Not posibble
+					<box-information-bgi>
+					</box-information-bgi>
+
+				28-02-2015 --- EVERITHING IS POSSIBLE !!!!!
+					If it's possible to implement using the param (transclude) on directive creation and adding in the template the label(<ng-transclude></ng-transclude>)
+				-->
+
+				<box-information-bgi img="{{ item.img }}" title1="{{ item.title1 }}" title2="{{ item.title2 }}" class1="{{ item.class1 }}" class2="{{ item.class2 }}" class3="{{ item.class3 }}" icontext="p">
 					
-						<!-- Truncate!. Because not is possible the implementary  of the directive on directive with angular Js.   (IF IS POSSIBLE)-->
-
-						<!--
-						Not posibble
-							<box-information-bgi>
-							</box-information-bgi>
-
-						28-02-2015 --- EVERITHING IS POSSIBLE !!!!!
-							If it's possible to implement using the param (transclude) on directive creation and adding in the template the label(<ng-transclude></ng-transclude>)
-						-->
-
-						<box-information-bgi img="{{ item.img }}" title1="{{ item.title1 }}" title2="{{ item.title2 }}"  icontext="k">
-							
-						</box-information-bgi>
-			    </div>
-			</div>
-		</div>
+				</box-information-bgi>
+	    </div>
 	</div>
 </div>
