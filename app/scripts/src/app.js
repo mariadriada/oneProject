@@ -35,7 +35,8 @@ app.directive('sliderChangeBgc', function() {
     scope: {
         data1: "="
     },
-    templateUrl: 'views/ui-components/sliderChangeBgc.html'
+    templateUrl: 'views/ui-components/sliderChangeBgc.html',
+    replace: true
   };
 });
 
@@ -47,7 +48,8 @@ app.directive('access', function() {
     scope: {
         data: "="
     },
-    templateUrl: 'views/ui-components/access.html'
+    templateUrl: 'views/ui-components/access.html',
+    replace:true
   };
 });
 
@@ -59,7 +61,8 @@ app.directive('boxInformation', function() {
     scope: {
         data: "="
     },
-    templateUrl: 'views/ui-components/boxInformation.html'
+    templateUrl: 'views/ui-components/boxInformation.html',
+    replace:true
   };
 });
 
@@ -74,7 +77,8 @@ app.directive('boxInformationBgi', function() {
         icontext: "@",
         img:"@"
     },
-    templateUrl: 'views/ui-components/boxInformationBgi.html'
+    templateUrl: 'views/ui-components/boxInformationBgi.html',
+    replace:true
   };
 });
 
@@ -119,7 +123,8 @@ app.directive('sliderPlane', function() {
     }
         console.log(scope);
     },
-    templateUrl: 'views/ui-components/sliderPlane.html'
+    templateUrl: 'views/ui-components/sliderPlane.html',
+    replace:true
   };
 });
 
