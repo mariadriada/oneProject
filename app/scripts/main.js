@@ -137,9 +137,6 @@ app.directive('sliderPlane', function() {
                 "classopacity": "violet",
             }, 
             { 
-                "title1": "nombre articulo" , 
-                "title2": "",
-                "title3": "tedakl{sdnma{fls" , 
                 "img": "resources/img/article4.jpg",
                 "classopacity": "blue",
             }, 
@@ -148,15 +145,10 @@ app.directive('sliderPlane', function() {
             }, 
             { 
                 "sci": "<slider-change-information></slider-change-information>",
-            }/*, 
-            { 
-                "other-type": true,
-                "which-type": "<slider-information-change></slider-information-change>"
             }, 
             { 
-                "other-type": true,
-                "which-type": "<follow-us></follow-us>"
-            }*/
+                "follow": "<follow-us></follow-us>",
+            }
         ]
     }
         console.log(scope);
@@ -195,10 +187,28 @@ app.directive('sliderChangeInformation', function() {
     templateUrl: 'views/ui-components/sliderChangeInformation.html',
     replace:true,
     link: function(){
-        console.log("boxMaps");
+        console.log("sliderChangeInformation");
     }
   };
 });
+
+
+// Directive for information follow-us
+app.directive('followUs', function() {
+  return {
+    restrict: "E",
+    transclude:true,
+    scope: {
+        type: "@"
+    },
+    templateUrl: 'views/ui-components/followUs.html',
+    replace:true,
+    link: function(){
+        console.log("followUs");
+    }
+  };
+});
+
 
 
 

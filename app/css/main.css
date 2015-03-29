@@ -346,7 +346,7 @@
         height: 50px;
         text-align: center;
         position: relative;
-        top: -255px; }
+        top: -260px; }
       .box-information-bgi .box .level .t2 {
         width: 100%;
         height: 50px;
@@ -397,6 +397,10 @@
       width: 100%;
       height: 300px;
       margin-left: 100%; }
+    .slider-plane-container .slider-plane .follow-us {
+      width: 100%;
+      height: 300px;
+      margin-left: 100%; }
 
 .slider-change-informaion {
   background-color: white;
@@ -419,6 +423,26 @@
   .slider-change-informaion .button-change {
     position: relative;
     top: -57px; }
+
+.follow-us {
+  background-color: #704B77;
+  position: relative;
+  top: -346px;
+  left: 0;
+  margin-top: 46px; }
+  .follow-us .box-information {
+    margin: 0;
+    font-weight: inherit;
+    height: 200px;
+    width: 80%;
+    margin: 0 auto; }
+    .follow-us .box-information .t1 {
+      padding-top: 59px;
+      font-size: 46px;
+      font-weight: inherit;
+      padding-bootom: 25px; }
+    .follow-us .box-information .buttons {
+      margin: -80px; }
 
 header {
   background-color: #1C221E;
