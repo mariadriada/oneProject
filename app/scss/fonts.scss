@@ -12,11 +12,17 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 /*font-family: 'Lobster', cursive;*/
 @import url(http://fonts.googleapis.com/css?family=Lobster);
+/*font-family: 'Droid Serif', serif;*/
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 
 
 $primary-font:	'Open Sans', sans-serif;
 $large-font:	'News Cycle', sans-serif;
 $special-font:	'Lobster', cursive;
+
+.font-droid-serif{
+	font-family: 'Droid Serif', serif;
+}
 
 .font-lobster{
 	font-family: 'Lobster', cursive !important;
@@ -46,7 +52,27 @@ $special-font:	'Lobster', cursive;
 	font-family: 'Lora', serif;
 }
 
+.f60{
+	font-size: 60px;
+}
+.f22{
+	font-size: 22px;
+}
 
+.fw700{
+	font-weight:700;
+}
+.fw700{
+	font-weight:500;
+}
+
+.ls2{
+	letter-spacciong:2px;
+}
+
+.ls4{
+	letter-spacciong:4px !important;
+}
 
 .banner{
 	font-family: $primary-font;

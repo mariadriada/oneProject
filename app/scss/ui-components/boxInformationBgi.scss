@@ -3,8 +3,8 @@
 .box-information-bgi{
 	width: 100%;
 	height: 300px;
-	
 
+	
 	.box{
 		width: 100%;
 		height: 100%;
@@ -18,14 +18,12 @@
 			position: relative;
 			top:-299px;
 			left:0;
-			background-color: red;
 			-moz-opacity: 0.48;
 			-khtml-opacity: 0.48;
 			opacity: 0.48;
 			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha" Opacity=48;
 			filter: progid:DXImageTransform.Microsoft.Alpha(opacity=48);
-			filter: alpha(opacity=48);
-			background-color: #6B7F86;
+			filter: alpha(opacity=48);	
 			z-index:14;
 		} 
 
@@ -41,7 +39,7 @@
 
 		.level{			
 			width: 100%;
-			height: 300px;
+			height: 0;
 			padding: 0;
 			position: relative;
 			top:-301px;
@@ -58,10 +56,10 @@
 				text-align: center;
 				font-size: initial;
 				position: relative;
-				top:-220px;
+				top:-195px;
 				
 			}
-
+		
 			.title2{
 				font-size: 60px;
 				font-weight: 700;
@@ -69,8 +67,46 @@
 				letter-spacing: 5px;
 				text-align: center;
 				position: relative;
-				top:-250px;
-				
+				top:-200px;				
+			}
+
+			.t1{
+				width: 100%;
+				height: 50px;
+				text-align: center;
+				position: relative;
+				top:-260px;
+			}
+
+			.t2{
+				width: 100%;
+				height: 50px;
+				text-align: center;
+				position: relative;
+				top:-231px;
+			}
+
+			.t3{				
+				font-weight: 100;
+				letter-spacing: 4px;
+				width: 100%;
+				height: 50px;
+				text-align: center;
+				font-size: initial;
+				position: relative;
+				top:-230px;
+				width: 80%;
+				margin: 0 auto;
+			}
+
+			.t4{
+				font-size: 33px;
+				font-weight: 700;
+				font-weight: 100;
+				letter-spacing: 5px;
+				text-align: center;
+				position: relative;
+				top: -200px;
 			}
 
 			.icon-text{

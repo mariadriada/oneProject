@@ -49,18 +49,20 @@ app.directive('access', function() {
   };
 });
 
-//Directive for information box component
-app.directive('boxInformation', function() {
+//Directive for maps
+app.directive('maps', function() {
   return {
     restrict: "E",
     transclude:true,
     scope: {
         data: "="
     },
-    templateUrl: 'views/ui-components/boxInformation.html',
+    templateUrl: 'views/ui-components/maps.html',
     replace:true
   };
 });
+
+
 
 // Directive for information backgroung-image box 
 app.directive('boxInformationBgi', function() {
@@ -73,9 +75,11 @@ app.directive('boxInformationBgi', function() {
         title3: "@",
         icontext: "@",
         img:"@",
+        classopacity:  "@",
         class1: "@",
         class2: "@",
         class3: "@",
+        class4: "@",
         type: "@"
     },
     templateUrl: 'views/ui-components/boxInformationBgi.html',
@@ -108,42 +112,43 @@ app.directive('sliderPlane', function() {
                 "title2": "Sensual",
                 "img": "resources/img/article1.jpg",
                 "icontext": "&",
-                "class1": "title title1 font_monteserrat",
+                "class1": "title title1 font-monteserrat",
                 "class2": "title  fonts-roboto icon-text",
                 "class3": "title title2 fonts-roboto",
+                "classopacity": "red",
 
             }, 
             { 
-                "title1": "Beauty" , 
-                "title2": "for tow",
-                "title3": "THIS MONTH, WE GIBE YOU A BEAUTY SESSION FOR THE PURCHASE ANOTHER THER. 70C." , 
-                "img": "resources/img/article2.jpg",
-                "icontext": "$"
+                "title1":   "Beauty" , 
+                "title2":   "for two",
+                "title3":   "THIS MONTH, WE GIVE YOU A BEAUTY SESSION FOR THE PURCHASE ANOTHER THER. 70C." , 
+                "img":      "resources/img/article2.jpg",
+                "class1":   "font-droid-serif f60 fw500 t1",
+                "class3":   "title f22 fonts-roboto t2 ls2 ",
+                "class4":   "title t3 f18 ls4",
+                "classopacity": "green-1",
             },
              { 
                 "title1": "ESCAPADA" , 
                 "title2": "ACTIVA'T 20C.",
-                "title3": "tedakl{sdnma{fls" , 
-                "img": "resources/img/article3.jpg"
+                "img": "resources/img/article3.jpg",
+                "class1":   "title title1 font-monteserrat",
+                "class3":   "title  fonts-roboto t4 ",
+                "classopacity": "violet",
             }, 
             { 
                 "title1": "nombre articulo" , 
                 "title2": "",
                 "title3": "tedakl{sdnma{fls" , 
-                "img": "resources/img/article4.jpg"
+                "img": "resources/img/article4.jpg",
+                "classopacity": "blue",
             }, 
             { 
-                "title1": "nombre articulo" , 
-                "title2": "",
-                "title3": "tedakl{sdnma{fls" , 
-                "img": "resources/img/article4.jpg"
-               /* "other-type": true,
-                "which-type": "<maps></maps>"*/
+                "maps": "<maps></maps>",
             }, 
             { 
-                "other-type": true,
-                "which-type": "<maps></maps>"
-            }, 
+                "sci": "<slider-change-information></slider-change-information>",
+            }/*, 
             { 
                 "other-type": true,
                 "which-type": "<slider-information-change></slider-information-change>"
@@ -151,7 +156,7 @@ app.directive('sliderPlane', function() {
             { 
                 "other-type": true,
                 "which-type": "<follow-us></follow-us>"
-            }
+            }*/
         ]
     }
         console.log(scope);
@@ -160,6 +165,42 @@ app.directive('sliderPlane', function() {
     replace:true
   };
 });
+
+
+// Directive for information box-maps
+app.directive('boxMaps', function() {
+  return {
+    restrict: "E",
+    transclude:true,
+    scope: {
+        type: "@"
+    },
+    templateUrl: 'views/ui-components/boxMaps.html',
+    replace:true,
+    link: function(){
+        console.log("boxMaps");
+    }
+  };
+});
+
+
+// Directive for information slider-change-information
+app.directive('sliderChangeInformation', function() {
+  return {
+    restrict: "E",
+    transclude:true,
+    scope: {
+        type: "@"
+    },
+    templateUrl: 'views/ui-components/sliderChangeInformation.html',
+    replace:true,
+    link: function(){
+        console.log("boxMaps");
+    }
+  };
+});
+
+
 
 
 /*fn jquery*/

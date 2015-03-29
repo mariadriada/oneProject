@@ -4,8 +4,10 @@
 @import "icon-logo";
 @import "menu";
 @import "banner";
-@import "ui-components/boxinformationbgi"; 
+@import "ui-components/boxinformationbgi";  
 @import "ui-components/sliderplane";
+@import "ui-components/sliderChangeInformation";  
+
  
 
 header{
@@ -70,6 +72,10 @@ footer{
 
 .green{
 	background-color: #00A064;
+}
+
+.green-1{
+	background-color: #6B8041;
 }
 
 .cviolet{
