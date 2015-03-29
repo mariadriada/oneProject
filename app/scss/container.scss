@@ -8,13 +8,14 @@ $top-level: 11;
 
 .welcome-container{
 	background-color: white;
-	height:30%;
+	height:auto;
 	width:100%;
 }
 
 .article-container{
-	height:auto;
+	height:600px;
 	padding:5px;
+	margin-top:-55px;
 }
 
 .regular-article{
@@ -95,46 +96,5 @@ $top-level: 11;
 .content-p{
 	width:80%;
 	margin: 0 auto;
-}
-
-
-
-
-.slider-plane-container{
-	width: 100%;
-	height: 300px;
-
-	.slider-plane{
-	width:25%;
-	height: 300px;
-	z-index: 10;
-	padding: 5px;
-	background-color: red;
-	background-color: #00A064;
-	z-index: 9;	
-	-moz-opacity: 0.58;
-	-khtml-opacity: 0.58;
-	opacity: 0.58;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha" Opacity=58;
-	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=58);
-	filter: alpha(opacity=58);
-	float:left;
-
-		img{
-			width: 100%;
-			height: 100%;
-			padding: 0;
-		}
-
-		.container{
-			width:100%;
-			height:300px;
-			padding:0;
-		}
-
-		.level{
-			z-index: $top-level;
-		}
-	}
 }
 

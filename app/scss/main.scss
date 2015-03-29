@@ -5,6 +5,7 @@
 @import "menu";
 @import "banner";
 @import "ui-components/boxinformationbgi";
+@import "ui-components/sliderplane";
 
 
 header{
@@ -15,7 +16,32 @@ header{
 }
 
 
+footer{
+	background-color: #1C221E;
+	widht: 100%;
+	height: 150px;
+	font-family: 'Roboto Condensed', sans-serif; 
+
+
+	.p{
+
+		padding:5px;
+		padding-left: 100px;
+	}
+
+	.p1{
+		margin-top: 8px;
+		padding-top:56px;
+		font-size: initial;
+	}
+
+	.p2{
+		font-size: x-small;
+	}
+}
+
 //Tools
+
 
 .cgris{
 	color:1C221E;

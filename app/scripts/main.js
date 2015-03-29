@@ -20,10 +20,6 @@ app.config(function($routeProvider){
 //Index controller
 app.controller('t_indexCtrl', function($scope){
 	console.log('t_indexCtrl'); 
-
-
-
-    $scope.text = "hola mundo cruel!!!";
 });
 
 
@@ -75,10 +71,17 @@ app.directive('boxInformationBgi', function() {
         title1: "@",
         title2: "@",
         icontext: "@",
-        img:"@"
+        img:"@",
+        class1: "@",
+        class2: "@",
+        class3: "@",
+        type: "@"
     },
     templateUrl: 'views/ui-components/boxInformationBgi.html',
-    replace:true
+    replace:true,
+    link: function(){
+        console.log("boxInformationBgi");
+    }
   };
 });
 
@@ -100,24 +103,50 @@ app.directive('sliderPlane', function() {
         scope.data = {
         articles: [
             { 
-                "title1": "nombre articulo" , 
-                "title2": "tedakl{sdnma{fls" , 
-                "img": "resources/img/article1.jpg"
+                "title1": "CELEBRATION" , 
+                "title2": "Sensual",
+                "title3": "Sensual" , 
+                "img": "resources/img/article1.jpg",
+                "icontext": "&"
             }, 
             { 
-                "title1": "nombre articulo" , 
-                "title2": "tedakl{sdnma{fls" , 
-                "img": "resources/img/article2.jpg"
+                "title1": "Beauty" , 
+                "title2": "for tow",
+                "title3": "THIS MONTH, WE GIBE YOU A BEAUTY SESSION FOR THE PURCHASE ANOTHER THER. 70C." , 
+                "img": "resources/img/article2.jpg",
+                "icontext": "$"
             },
              { 
-                "title1": "nombre articulo" , 
-                "title2": "tedakl{sdnma{fls" , 
+                "title1": "ESCAPADA" , 
+                "title2": "ACTIVA'T 20C.",
+                "title3": "tedakl{sdnma{fls" , 
                 "img": "resources/img/article3.jpg"
             }, 
             { 
                 "title1": "nombre articulo" , 
-                "title2": "tedakl{sdnma{fls" , 
+                "title2": "",
+                "title3": "tedakl{sdnma{fls" , 
                 "img": "resources/img/article4.jpg"
+            }, 
+            { 
+                "title1": "nombre articulo" , 
+                "title2": "",
+                "title3": "tedakl{sdnma{fls" , 
+                "img": "resources/img/article4.jpg"
+               /* "other-type": true,
+                "which-type": "<maps></maps>"*/
+            }, 
+            { 
+                "other-type": true,
+                "which-type": "<maps></maps>"
+            }, 
+            { 
+                "other-type": true,
+                "which-type": "<slider-information-change></slider-information-change>"
+            }, 
+            { 
+                "other-type": true,
+                "which-type": "<follow-us></follow-us>"
             }
         ]
     }
