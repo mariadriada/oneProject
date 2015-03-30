@@ -443,6 +443,13 @@
       padding-bootom: 25px; }
     .follow-us .box-information .buttons {
       margin: -80px; }
+      .follow-us .box-information .buttons .icon {
+        font-size: 31px;
+        color: white;
+        padding: 10px;
+        display: -webkit-inline-box; }
+    .follow-us .box-information .icon:hover {
+      font-size: 35px; }
 
 header {
   background-color: #1C221E;
