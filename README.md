@@ -29,4 +29,9 @@ Install gulp with command: npm install gulp
  1. Public by production on public durectory:	gulp production
  2. Start project: gulp
 
+ # Init path :
 
+
+ For public access: http://localhost:3000/public/
+
+  or for development: http://localhost:3000/app/ 
