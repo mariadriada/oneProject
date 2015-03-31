@@ -7,29 +7,29 @@ $max-size:	100%;
 	border: 5px solid black;
 	height: 600px;
 
-	.box-slider-1{
+	 .box-slider-1{
 		position:relative;
 		top:-500px;
 		left:58%;
 	}
-
+	
 	.box-slider-opacity-1 {
 		position:relative;
 		top:-778px;
 		left:58%;
 	}
-
+	
 	.box-access{
 		position:relative;
 		top:-908px;
 		left:10%;
 	}
-
+	
 	.box-access-opacity{
 		position:relative;
 		top:-1156px;
 		left:10%;
-	}
+	} 
 
 	#slider{
 		width: $max-size;
@@ -69,5 +69,6 @@ $max-size:	100%;
 		font-size: 52px;
 	}
 
+	
 
 }

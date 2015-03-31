@@ -273,4 +273,4 @@ function imageChange(type) {
     }
 }   
 
-setInterval("imageChange('next')", 3000);
+//setInterval("imageChange('next')", 3000);
