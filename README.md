@@ -20,5 +20,13 @@ Install gulp with command: npm install gulp
 #### Components to install with command (Only if necessary): npm install --save-dev [name_componente]
  (browser-sync, gulp-sass, gulp-autoprefixer, gulp-concat, gulp-minify-css, gulp-uglify, gulp-bower )
 
- ###Dist
+ ### Dist
  Bootstrap, AngulasJs,JQuery
+
+
+ # Project importants commands configured in file gulpfile.js
+
+ 1. Public by production on public durectory:	gulp production
+ 2. Start project: gulp
+
+

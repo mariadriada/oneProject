@@ -75,7 +75,7 @@ gulp.task('public-scripts', function(){
 //Style on public directory for production
 gulp.task('public-style', function(){
 	 gulp
-    .src(['./app/css/main.css'])
+    .src(['./app/css/**/*.css'])
     .pipe(gulp.dest('./public/css/'));
 });
 
