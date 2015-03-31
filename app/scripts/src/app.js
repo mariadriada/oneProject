@@ -232,8 +232,10 @@ app.directive('followUs', function() {
 
 /*fn jquery*/
 
-$(document).ready(function() {
 
+
+$(document).ready(function() {
+   
     //Click on buttons main slider
     $(".icon-slider").click(function(){
         var type = $(this).attr('type');
@@ -243,14 +245,14 @@ $(document).ready(function() {
          //number static of images
         if (i === 3) { i= 0; } else if (i === -3) { i= 0;}
         
-        if ( i === $("slider img").size()){
-            i = 0;
-        }
+     
         $("#slider img").hide();
         $("#slider img").eq(i).fadeIn("medium");
-        console.log("change image "+i);
+        
     });
 });
+
+
 
 function changeColor(element){
     var color = $(element).attr("color");
@@ -259,19 +261,16 @@ function changeColor(element){
     console.log("change "+color +" element "+obj);
 };
 
+
 var i = 0;
-
-
 function imageChange(type) {
-
-    if (type == 'next') { i++; }
-    else { i--; }
+    i++;   
+    $("#slider img").hide();
+    $("#slider img").eq(i).fadeIn();   
     
     if ( i == $("slider img").size()){
         i = 0;
     }
-    $("#slider img").hide();
-    $("#slider img").eq(i).fadeIn("medium");
-
-    console.log("change image");
 }   
+
+setInterval("imageChange('next')", 3000);
