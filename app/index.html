@@ -48,30 +48,28 @@
 
 	<!-- main container-->
 	<nav class="container-fluid main-container">
-		<div class="banner">
+		
 
-
-			<div class="btn-slider"></div>
+		<div class="banner" ng-controller="t_bannerCtrl">
 			
+
 			<div id="slider">
 				<img src="resources/img/b1.jpg">
 				<img src="resources/img/b2.jpg">
 				<img src="resources/img/b3.jpg">
+
+				<div class="btn-slider-next  icon-circle-right icon-slider" ng-click="console.log('click next');" type="next"></div>
+				<div class="btn-slider-back icon-circle-left icon-slider" type="back"></div>
 			</div>
-			
-			<!--
-			<div class="btn-back">
-				<img src="img/btn.jpg">
-			</div>-->
+
 
 			<!-- Slider bgc-change on banner-->
-			<slider-change-bgc >
+			<slider-change-bgc>
 			</slider-change-bgc> 
 
 			<!-- Box for user access on banner-->
 			<access>
-			</access>
-			
+			</access>			
 		</div>
 				
 		<!-- Welcome text in /home -->

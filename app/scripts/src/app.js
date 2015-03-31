@@ -22,6 +22,11 @@ app.controller('t_indexCtrl', function($scope){
 	console.log('t_indexCtrl'); 
 });
 
+app.controller('t_bannerCtrl', function($scope){
+    console.log('t_bannerCtrl'); 
+});
+
+
 
 //Directive for Slider component
 app.directive('sliderChangeBgc', function() {
@@ -227,9 +232,46 @@ app.directive('followUs', function() {
 
 /*fn jquery*/
 
+$(document).ready(function() {
+
+    //Click on buttons main slider
+    $(".icon-slider").click(function(){
+        var type = $(this).attr('type');
+        if (type === 'next') { i++; }
+        else { i--; }
+
+         //number static of images
+        if (i === 3) { i= 0; } else if (i === -3) { i= 0;}
+        
+        if ( i === $("slider img").size()){
+            i = 0;
+        }
+        $("#slider img").hide();
+        $("#slider img").eq(i).fadeIn("medium");
+        console.log("change image "+i);
+    });
+});
+
 function changeColor(element){
     var color = $(element).attr("color");
     var obj = $(element).attr("element");
     $(obj).css("background-color",color);
     console.log("change "+color +" element "+obj);
 };
+
+var i = 0;
+
+
+function imageChange(type) {
+
+    if (type == 'next') { i++; }
+    else { i--; }
+    
+    if ( i == $("slider img").size()){
+        i = 0;
+    }
+    $("#slider img").hide();
+    $("#slider img").eq(i).fadeIn("medium");
+
+    console.log("change image");
+}   
